@@ -20,4 +20,14 @@ public class Math3 {
     public static double add(final double a, final double b) {
         return a + b;
     }
+
+    /**
+     * the multiply of two doubles
+     * @param a
+     * @param b
+     * @return
+     */
+    public static double multiply(final double a, final double b) {
+        return a * b;
+    }
 }

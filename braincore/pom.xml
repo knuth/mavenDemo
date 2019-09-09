@@ -4,7 +4,7 @@
 
     <groupId>com.furui.demo</groupId>
     <artifactId>brain-core</artifactId>
-    <version>1.2.1</version>
+    <version>1.2.2-SNAPSHOT</version>
 
     <properties>
     </properties>
@@ -24,7 +24,7 @@
         <developerConnection>
             scm:git:https://github.com/knuth/mavenDemo.git
         </developerConnection>
-      <tag>1.2.1</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <build>

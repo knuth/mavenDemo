@@ -3,8 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.furui.demo</groupId>
-    <artifactId>brain-core</artifactId>
-    <version>1.2.3-SNAPSHOT</version>
+    <artifactId>demo</artifactId>
+    <packaging>pom</packaging>
+    <version>1.2.4</version>
+    <modules>
+        <module>brain-data</module>
+        <module>brain-script</module>
+        <module>brain-core</module>
+    </modules>
 
     <properties>
     </properties>
@@ -24,7 +30,7 @@
         <developerConnection>
             scm:git:https://github.com/knuth/mavenDemo.git
         </developerConnection>
-        <tag>HEAD</tag>
+        <tag>1.2.4</tag>
     </scm>
 
     <build>

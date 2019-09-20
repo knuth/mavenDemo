@@ -4,7 +4,7 @@
  * Qunhe PROPRIETARY/CONFIDENTIAL, any form of usage is subject to approval.
  */
 
-package com.furui.demo.braincore;
+package brain.core;
 
 /**
  * @author furui

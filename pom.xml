@@ -11,6 +11,7 @@
         <module>brain-script</module>
         <module>brain-core</module>
         <module>redis-demo</module>
+        <module>coroutine-demo</module>
     </modules>
 
     <properties>

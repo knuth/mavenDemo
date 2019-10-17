@@ -12,6 +12,7 @@
         <module>brain-core</module>
         <module>redis-demo</module>
         <module>coroutine-demo</module>
+        <module>akka-demo</module>
     </modules>
 
     <properties>

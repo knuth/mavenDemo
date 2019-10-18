@@ -6,17 +6,16 @@
 
 package com.furui.akka.demo;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 /**
  * @author furui
  *
  */
+@Data
+@AllArgsConstructor
 public class MyData {
-
-    public MyData(final String name, final Long age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    public String name;
-    public Long age;
+    private String name;
+    private Long age;
 }

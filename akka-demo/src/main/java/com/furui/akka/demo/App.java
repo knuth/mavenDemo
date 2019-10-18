@@ -67,10 +67,10 @@ public class App {
                 new Mapper<Tuple2<MyData, MyData>, MyData>() {
 
                     public MyData apply(final scala.Tuple2<MyData, MyData> zipped) {
-                        System.out.println(zipped._1.name + " age: " + zipped._1.age);
-                        System.out.println(zipped._2.name + " age: " + zipped._2.age);
+                        System.out.println(zipped._1.getName() + " age: " + zipped._1.getAge());
+                        System.out.println(zipped._2.getName() + " age: " + zipped._2.getAge());
 
-                        zipped._2.age = 0L;
+                        zipped._2.setAge(0L);
                         return new MyData(newName, -1L);
                     }
                 }, ec);
@@ -120,7 +120,7 @@ public class App {
 
         try {
             final MyData result = Await.result(futureSum, Duration.apply(10, TimeUnit.SECONDS));
-            System.out.println("Result :" + result.name + " " + result.age);
+            System.out.println("Result :" + result.getName() + " " + result.getAge());
         } catch (final Exception e) {
             e.printStackTrace();
         }
@@ -131,7 +131,7 @@ public class App {
         public final void onSuccess(final T t) {
             final Try<MyData> d = (Try<MyData>) (t);
             final MyData data = d.get();
-            System.out.println(data.name + "  " + data.age);
+            System.out.println(data.getName() + "  " + data.getAge());
         }
     }
 }
